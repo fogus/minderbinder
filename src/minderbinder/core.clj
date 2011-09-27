@@ -14,7 +14,7 @@
                                  (throw (ArithmeticException. (str (.getCause e)
                                                                    " in " spec))))))
             (keyword? spec) (relative-units spec units [u history])
-            :default spec))))
+            :default) spec)))
 
 (defmacro defunits-of [quantity base-unit & units]
   (let [magnitude (gensym)
@@ -88,6 +88,17 @@
   :yobibyte :yottabyte
   :YiB :yobibyte
   :YB :YiB
+
+  :kbit 1000
+  :kilobit :kbit
+  :kibit :kbit
+  :kibibit :kibit
+  :Mbit [1000 :kbit]
+  :megabit :Mbit
+  :Mibit :Mbit
+  :mebibit :Mibit
+  :Gbit [1000 :Mbit]
+;;  :Gbit #{:gigabit :gibibit :Gibit} aliases?
   )
 
 (comment
@@ -95,5 +106,5 @@
   (float 10000000/4999999)
   (unit-of-digital-size 1 :octet)
   (unit-of-digital-size 1 :nybble)
-  (unit-of-digital-size 1 :k)
+  (unit-of-digital-size 1 :YiB)
 )
