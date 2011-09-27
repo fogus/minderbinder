@@ -57,21 +57,37 @@
   :octet :byte
   :kilobyte 1024
   :kibibyte :kilobyte
+  :KiB :kibibyte
+  :kB :KiB
   :megabyte [1024 :kilobyte]
   :mebibyte :megabyte
+  :MiB :mebibyte
+  :MB :MiB
   :gigabyte [1024 :megabyte]
   :gibibyte :gigabyte
+  :GiB :gibibyte
+  :GB :GiB
   :terabyte [1024 :gigabyte]
   :tebibyte :terabyte
+  :TiB :tebibyte
+  :TB :TiB
   :petabyte [1024 :terabyte]
   :pebibyte :petabyte
+  :PiB :pebibyte
+  :PB :PiB
   :exabyte [1024 :petabyte]
   :exbibyte :exabyte
+  :EiB :exbibyte
+  :EB :EiB
   :internet [500N :exabyte]       ;; estimate, as of 2009
   :zettabyte [1024N :exabyte]
   :zebibyte :zettabyte
+  :ZiB :zebibyte
+  :ZB :ZiB
   :yottabyte [1024N :zettabyte]
   :yobibyte :yottabyte
+  :YiB :yobibyte
+  :YB :YiB
   )
 
 (comment
@@ -79,5 +95,5 @@
   (float 10000000/4999999)
   (unit-of-digital-size 1 :octet)
   (unit-of-digital-size 1 :nybble)
-  (unit-of-digital-size 1 :yobibyte)
+  (unit-of-digital-size 1 :k)
 )
