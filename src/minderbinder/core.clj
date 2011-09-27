@@ -14,7 +14,7 @@
                                  (throw (ArithmeticException. (str (.getCause e)
                                                                    " in " spec))))))
             (keyword? spec) (relative-units spec units [u history])
-            :default) spec)))
+            :default spec))))
 
 (defmacro defunits-of [quantity base-unit & units]
   (let [magnitude (gensym)
