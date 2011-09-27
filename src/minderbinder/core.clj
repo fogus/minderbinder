@@ -16,10 +16,19 @@
             (keyword? spec) (relative-units spec units [u history])
             :default spec))))
 
+(defn- build-conversion-map
+  [base-unit unit-pairs]
+  (into `{~base-unit 1}
+        (reduce concat
+                (for [[k v] (partition 2 unit-pairs)]
+                  (if (set? v)
+                    (map vec (partition 2 (interleave v (repeat k))))
+                    [[k v]])))))
+
 (defmacro defunits-of [quantity base-unit & units]
   (let [magnitude (gensym)
         unit (gensym)
-        conversions (into `{~base-unit 1} (map vec (partition 2 units)))]
+        conversions (build-conversion-map base-unit units)]
     `(do
        (defmacro ~(symbol (str "unit-of-" quantity)) [~magnitude ~unit]
          `(* ~~magnitude
@@ -52,59 +61,37 @@
 (defunits-of digital-size :byte
   :bit 1/8
   :nibble 1/2
-  :nybble :nibble
-  :nyble :nibble
+  :nibble #{:nybble :nyble}
   :octet :byte
   :kilobyte 1024
-  :kibibyte :kilobyte
-  :KiB :kibibyte
-  :kB :KiB
+  :kilobyte #{:kibibyte :KiB :kB}
   :megabyte [1024 :kilobyte]
-  :mebibyte :megabyte
-  :MiB :mebibyte
-  :MB :MiB
+  :megabyte #{:mebibyte :MiB :MB}
   :gigabyte [1024 :megabyte]
-  :gibibyte :gigabyte
-  :GiB :gibibyte
-  :GB :GiB
+  :gigabyte #{:gibibyte :GiB :GB}
   :terabyte [1024 :gigabyte]
-  :tebibyte :terabyte
-  :TiB :tebibyte
-  :TB :TiB
+  :terabyte #{:tebibyte :TiB :TB}
   :petabyte [1024 :terabyte]
-  :pebibyte :petabyte
-  :PiB :pebibyte
-  :PB :PiB
+  :petabyte #{:pebibyte :PiB :PB}
   :exabyte [1024 :petabyte]
-  :exbibyte :exabyte
-  :EiB :exbibyte
-  :EB :EiB
+  :exabyte #{:exbibyte :EiB :EB}
   :internet [500N :exabyte]       ;; estimate, as of 2009
   :zettabyte [1024N :exabyte]
-  :zebibyte :zettabyte
-  :ZiB :zebibyte
-  :ZB :ZiB
+  :zettabyte #{:zebibyte :ZiB :ZB}
   :yottabyte [1024N :zettabyte]
-  :yobibyte :yottabyte
-  :YiB :yobibyte
-  :YB :YiB
+  :yottabyte #{:yobibyte :YiB :YB}
 
-  :kbit 1000
-  :kilobit :kbit
-  :kibit :kbit
-  :kibibit :kibit
+  :kbit [1000 :bit]
+  :kbit #{:kilobit :kibit :kibibit}
   :Mbit [1000 :kbit]
-  :megabit :Mbit
-  :Mibit :Mbit
-  :mebibit :Mibit
+  :Mbit #{:megabit :Mibit :mebibit}
   :Gbit [1000 :Mbit]
-;;  :Gbit #{:gigabit :gibibit :Gibit} aliases?
-  )
+  :Gbit #{:gigabit :gibibit :gibit})
 
 (comment
   (float (unit-of-distance 1 :cable))
   (float 10000000/4999999)
   (unit-of-digital-size 1 :octet)
   (unit-of-digital-size 1 :nybble)
-  (unit-of-digital-size 1 :YiB)
+  (unit-of-digital-size 1 :gibit)
 )
