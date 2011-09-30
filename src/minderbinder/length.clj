@@ -1,7 +1,8 @@
-(ns minderbinder.distance
+(ns minderbinder.length
   (use [minderbinder.core :only [defunits-of]]))
 
-(defunits-of distance ::m
+(defunits-of length ::meter
+  ::m  ::meter
   ::km 1000
   ::cm 1/100
   ::mm [1/10 ::cm]
