@@ -49,4 +49,6 @@
   (int
    (/ (unit-of-distance 1 ::fathom)
       (unit-of-distance 1 ::survey-ft)))
+
+  (double (unit-of-distance 1 ::surveyors-pole))
 )
