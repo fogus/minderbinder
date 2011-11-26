@@ -25,7 +25,7 @@
                     (map vec (partition 2 (interleave v (repeat k))))
                     [[k v]])))))
 
-(defmacro defunits-of [quantity base-unit & units]
+(defmacro defunits-of [quantity base-unit desc & units]
   (let [magnitude (gensym)
         unit (gensym)
         conversions (build-conversion-map base-unit units)]

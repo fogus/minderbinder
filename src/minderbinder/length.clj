@@ -2,6 +2,8 @@
   (use [minderbinder.core :only [defunits-of]]))
 
 (defunits-of length ::meter
+  "The meter is the length of the path travelled by light in vacuum during a 
+   time interval of 1/299,792,458 of a second."
   ::m  ::meter
   ::km 1000
   ::cm 1/100
@@ -48,8 +50,8 @@
 
 (comment
   (int
-   (/ (unit-of-distance 1 ::fathom)
-      (unit-of-distance 1 ::survey-ft)))
+   (/ (unit-of-length 1 ::fathom)
+      (unit-of-length 1 ::survey-ft)))
 
-  (double (unit-of-distance 1 ::surveyors-pole))
+  (double (unit-of-length 1 ::surveyors-pole))
 )

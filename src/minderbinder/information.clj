@@ -2,6 +2,7 @@
   (use [minderbinder.core :only [defunits-of]]))
 
 (defunits-of information ::byte
+  "TODO"
   ::bit 1/8
   ::nibble 1/2
   ::nibble #{::nybble ::nyble}
