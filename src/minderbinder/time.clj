@@ -1,6 +1,8 @@
 (ns minderbinder.time
   (use [minderbinder.core :only [defunits-of]]))
 
+(def parse-time-unit identity)
+
 (defunits-of time ::second
   ""
   ::second    #{::sec ::s}

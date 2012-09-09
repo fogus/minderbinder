@@ -1,2 +1,2 @@
-{unit/time   clojure.core/identity
- unit/length clojure.core/identity}
+{unit/time   minderbinder.time/parse-time-unit
+ unit/length minderbinder.time/parse-length-unit}

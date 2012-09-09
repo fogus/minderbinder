@@ -1,6 +1,8 @@
 (ns minderbinder.length
   (use [minderbinder.core :only [defunits-of]]))
 
+(def parse-length-unit identity)
+
 (defunits-of length ::meter
   "The meter is the length of the path travelled by light in vacuum during a 
    time interval of 1/299,792,458 of a second."
