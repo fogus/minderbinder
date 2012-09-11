@@ -1,6 +1,8 @@
 (ns minderbinder.test.core
   (:use [minderbinder.core] :reload)
+  (:require minderbinder.time)
   (:use [clojure.test]))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(deftest test-time-units
+  (is (= 1000 (minderbinder.time/parse-time-unit [1 :second])))
+  (is (= 1000 #unit/time [1 :second])))

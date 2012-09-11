@@ -28,12 +28,25 @@
 (defmacro defunits-of [quantity base-unit desc & units]
   (let [magnitude (gensym)
         unit (gensym)
-        conversions (build-conversion-map base-unit units)]
+        conversions (build-conversion-map base-unit units)
+        conv-fn (symbol (str "parse-" quantity "-unit"))
+        conv-mac (symbol (str "unit-of-" quantity))]
     `(do
-       (defmacro ~(symbol (str "unit-of-" quantity)) [~magnitude ~unit]
+       (defmacro ~conv-mac
+         [~magnitude ~unit]
          `(* ~~magnitude
              ~(case ~unit
                     ~@(mapcat
                        (fn [[u# & r#]]
                          `[~u# ~(relative-units u# conversions [])])
-                       conversions)))))))
+                       conversions))))
+
+       (defn ~conv-fn
+         [[mag# u#]]
+         (let [conv# ~conversions
+               r#    (get conv# u#)]
+           (cond (keyword? r#) (~conv-fn [mag# r#])
+                 (vector?  r#) (* mag# (~conv-fn r#))
+                 :default (* mag# r#))))
+       ~conversions)))
+
