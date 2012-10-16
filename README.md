@@ -31,6 +31,15 @@ Defining custom conversion rules
 
 TODO
 
+Plans
+=====
+
+* ClojureScript integration
+* More conversions included by default
+* Base unit changing
+* Cross-unit conversions via function results
+* More plans not yet thought up.
+
 References
 ==========
 
