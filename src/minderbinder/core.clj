@@ -30,7 +30,8 @@
         unit (gensym)
         conversions (build-conversion-map base-unit units)
         conv-fn (symbol (str "parse-" quantity "-unit"))
-        conv-mac (symbol (str "unit-of-" quantity))]
+        conv-mac (symbol (str "unit-of-" quantity))
+        conv-table (symbol (str quantity "-table"))]
     `(do
        (defmacro ~conv-mac
          [~magnitude ~unit]
@@ -42,11 +43,16 @@
                        conversions))))
 
        (defn ~conv-fn
-         [[mag# u#]]
-         (let [conv# ~conversions
-               r#    (get conv# u#)]
-           (cond (keyword? r#) (~conv-fn [mag# r#])
-                 (vector?  r#) (* mag# (~conv-fn r#))
-                 :default (* mag# r#))))
+         [descr#]
+         (let [conv# ~conversions]
+           (reduce +
+                   (map #(let [[mag# u#] %
+                               r# (get conv# u#)]
+                           (cond (keyword? r#) (~conv-fn [mag# r#])
+                                 (vector?  r#) (* mag# (~conv-fn r#))
+                                 :default (* mag# r#)))
+                        (partition 2 descr#)))))
+
+       (def ~conv-table ~conversions)
        ~conversions)))
 

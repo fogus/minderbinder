@@ -3,17 +3,18 @@
 
 (defunits-of time :millisecond
   ""
-  :millisecond #{:ms}
+  :millisecond #{:ms :milliseconds}
   :second      1000
-  :second      #{:sec :s}
+  :second      #{:sec :s :seconds}
   :minute      [60 :sec]
-  :min         :minute
-  :hr          [60 :min]
-  :hour        :hr
+  :minute      #{:min :minutes :m}
+  :hour        [60 :min]
+  :hour        #{:hours :hr}
   :day         [24 :hour]
-  :day         #{:d :da}
+  :day         #{:d :da :days}
   :week        [7 :day]
-  :week        #{:wk :sennight}
+  :week        #{:wk :sennight :weeks}
   :fortnight   [14 :day]
   :blink       [1/100000 :day]
   :ce          [1/100 :day])
+
