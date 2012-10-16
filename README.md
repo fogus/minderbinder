@@ -74,7 +74,7 @@ Defining custom conversion rules
 
 Defining a unit conversion is accomplished via Minderbinder's `defunits-of` macro.  The body of the macro expects the following structure:
 
-**(defunits-of *unit name* *base unit tag* *docstring* *conversion spec*)**
+**(defunits-of *unit-name* *base-unit-tag* *docstring* *conversion-spec*)**
 
 The *conversion spec* part of the body currently allows pairs of mappings defined in reletive terms.  The pairs always start with a keyword used as the unit tag.  However, the right-hand side of the pair can be one of the following:
 
