@@ -5,6 +5,23 @@ Converting one thing into another via Clojure.
 
 *this is a work in progress and subject to change without a moment's notice*
 
+Use
+====
+
+Include the following in your [Leiningen]() project.clj file:
+
+    [fogus/minderbinder "0.2.0"]
+
+Or include the following in your pom.xml file in the `dependencies` section:
+
+```xml
+	<dependency>
+      <groupId>fogus</groupId>
+      <artifactId>minderbinder</artifactId>
+      <version>0.2.0</version>
+	</dependency>
+```
+
 Examples
 ========
 
