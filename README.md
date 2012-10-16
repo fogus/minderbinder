@@ -87,7 +87,7 @@ A simplified version of [Minderbinder's length conversion definition][l] serves 
 
 ```clojure
 	(defunits-of length :meter
-	  "The meter is the length of the path travelled by light in vacuum during a 
+	  "The meter is the length of the path traveled by light in vacuum during a 
 	   time interval of 1/299,792,458 of a second."
 	   
 	  :m  :meter                   ;; an alias for the base unit
