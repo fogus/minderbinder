@@ -25,6 +25,17 @@
                     (map vec (partition 2 (interleave v (repeat k))))
                     [[k v]])))))
 
+(comment
+
+  (build-conversion-map :meter
+                        [:meter 1
+                         :cm 1/100
+                         :km 1000
+                         :mm [1/10 :cm]])
+
+  ;;=> {:meter 1, :km 1000, :cm 1/100, :mm [1/10 :cm]}
+)
+
 (defmacro defunits-of [quantity base-unit desc & units]
   (let [magnitude (gensym)
         unit (gensym)
