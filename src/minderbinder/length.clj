@@ -48,7 +48,11 @@
   :engineers-chain [100 :ft]
   :engineers-link [1/100 :engineers-chain]
   :ramsden-chain :engineers-chain
-  :ramsden-link :engineers-link)
+  :ramsden-link :engineers-link
+  :au 149597870700
+  :light-year 9460730472580800
+  :light-second 299792458)
+
 
 (comment
   (int
