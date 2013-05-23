@@ -55,8 +55,14 @@
   :ua 149597870700  ;; The International System of Units (8th edition)
   :ua #{:au :astronimical-unit}
 
-  :light-year 9460730472580800
-  :light-second 299792458)
+  :light-year 9460730472580800N
+  :light-second 299792458
+
+
+  :parsec [3.26 :light-year] ;; aprox
+  :parsec :pc
+)
+
 
 
 (comment
