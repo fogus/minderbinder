@@ -72,6 +72,9 @@
   :nm [1/1000 :nm]
   :nm #{:millimicrometre :nanometer :nanometre :millimicron}
 
+  :pm [1/1000000 :micron]
+  :pm #{:picometer :picometre :µµ}
+
   :angstrom [0.1 :nm]
   :angstrom :Å
 
