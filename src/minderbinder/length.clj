@@ -64,7 +64,7 @@
   :gigaparsec [1000000000 :parsec]
   :gigaparsec :Gpc
 
-  ;; Micro units
+  ;; Particle units
 
   :micron [1/1000 :mm]
   :micron #{:micrometre :µ :micrometer :um}
@@ -77,6 +77,9 @@
 
   :angstrom [100 :pm]
   :angstrom :Å
+
+  :fermi [1/1000000 :nm]
+  :fermi #{:femtometre :femtometer :fm}
 
   ;; The Bohr radius is a physical constant, approximately
   ;; equal to the most probable distance between the proton
