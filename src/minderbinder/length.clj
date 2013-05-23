@@ -4,7 +4,7 @@
 (def parse-length-unit identity)
 
 (defunits-of length :meter
-  "The meter is the length of the path travelled by light in vacuum during a 
+  "The meter is the length of the path travelled by light in vacuum during a
    time interval of 1/299,792,458 of a second."
   :m  :meter
   :km 1000
@@ -17,7 +17,7 @@
   :foot #{:feet :ft}
   :inch [1/12 :foot]
   :mile [1760 :yard]
-  :furlong [1/8 :mile]
+  :furlong [1/8 :mile]  ;; based on US survey foot
 
   :fathom [10000000/4999999 :yard]
   :survey-ft [1/6 :fathom]
