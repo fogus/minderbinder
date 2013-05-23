@@ -60,9 +60,10 @@
 
   :parsec [3.26 :light-year] ;; aprox
   :parsec :pc
-
   :megaparsec [1000000 :parsec]
   :megaparsec :Mpc
+  :gigaparsec [1000000000 :parsec]
+  :gigaparsec :Gpc
 )
 
 
