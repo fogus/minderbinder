@@ -52,18 +52,28 @@
   :ramsden-chain :engineers-chain
   :ramsden-link :engineers-link
 
+  ;; Galactic units
+
   :ua 149597870700  ;; The International System of Units (8th edition)
   :ua #{:au :astronimical-unit}
 
   :light-year 9460730472580800N
   :light-second 299792458
 
-  :parsec [3.26 :light-year] ;; aprox, the divisor is 149597870691/tan(pi/180)
+  :parsec [3.26 :light-year] ;; ≈ - the divisor is 149597870691/tan(pi/180)
   :parsec :pc
   :megaparsec [1000000 :parsec]
   :megaparsec :Mpc
   :gigaparsec [1000000000 :parsec]
   :gigaparsec :Gpc
+
+  ;; Micro units
+
+  ;; The Bohr radius is a physical constant, approximately
+  ;; equal to the most probable distance between the proton
+  ;; and electron in a hydrogen atom in its ground state.
+  :bohr-radius [0.0529177 :nm]
+  :bohr-radius #{:atomic-unit-of-length :a₀}
 )
 
 
