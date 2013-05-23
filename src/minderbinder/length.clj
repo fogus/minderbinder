@@ -89,6 +89,7 @@
 
   ;; Typographic units
   :pica [1/6 :inch]
+  :point [1/12 :pica]
 )
 
 
