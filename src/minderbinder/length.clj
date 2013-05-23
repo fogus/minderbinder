@@ -12,6 +12,8 @@
   :mm [1/10 :cm]
   :nm [1/1000 :mm]
 
+  :micron [1/1000 :mm]
+
   :yard 9144/10000
   :foot [1/3 :yard]
   :foot #{:feet :ft}
