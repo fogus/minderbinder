@@ -67,7 +67,7 @@
   ;; Micro units
 
   :micron [1/1000 :mm]
-  :micron #{:micrometre :µ :micrometer}
+  :micron #{:micrometre :µ :micrometer :um}
 
   :nm [1/1000 :nm]
   :nm #{:millimicrometre :nanometer :nanometre :millimicron}
