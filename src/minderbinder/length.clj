@@ -69,6 +69,9 @@
 
   ;; Micro units
 
+  :angstrom [0.1 :nm]
+  :angstrom :Å
+
   ;; The Bohr radius is a physical constant, approximately
   ;; equal to the most probable distance between the proton
   ;; and electron in a hydrogen atom in its ground state.
