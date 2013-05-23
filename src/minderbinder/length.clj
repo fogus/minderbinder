@@ -75,7 +75,7 @@
   :pm [1/1000000 :micron]
   :pm #{:picometer :picometre :µµ}
 
-  :angstrom [0.1 :nm]
+  :angstrom [100 :pm]
   :angstrom :Å
 
   ;; The Bohr radius is a physical constant, approximately
