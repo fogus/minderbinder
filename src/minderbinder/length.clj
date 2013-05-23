@@ -18,6 +18,9 @@
   :mile [1760 :yard]
   :furlong [1/8 :mile]  ;; based on US survey foot
 
+  :rod [5.0292 :m]
+  :rod #{:perch :pole :lug}
+
   :fathom [10000000/4999999 :yard]
   :survey-ft [1/6 :fathom]
   :nautical-mile 1852
