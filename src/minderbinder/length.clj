@@ -58,9 +58,11 @@
   :light-year 9460730472580800N
   :light-second 299792458
 
-
   :parsec [3.26 :light-year] ;; aprox
   :parsec :pc
+
+  :megaparsec [1000000 :parsec]
+  :megaparsec :Mpc
 )
 
 
