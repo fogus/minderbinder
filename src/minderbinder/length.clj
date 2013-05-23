@@ -18,9 +18,6 @@
   :mile [1760 :yard]
   :furlong [1/8 :mile]  ;; based on US survey foot
 
-  :rod [5.0292 :m]
-  :rod #{:perch :pole :lug}
-
   :fathom [10000000/4999999 :yard]
   :survey-ft [1/6 :fathom]
   :nautical-mile 1852
@@ -46,11 +43,17 @@
   :chain :surveyors-chain
   :chain #{:survey-chain :ch}
   :link :surveyors-link
-  :gunters-chain :surveyors-chain
+  :gunters-chain #{:surveyors-chain :chain}
   :engineers-chain [100 :ft]
   :engineers-link [1/100 :engineers-chain]
   :ramsden-chain :engineers-chain
   :ramsden-link :engineers-link
+
+  :rod [5.0292 :m]
+  :rod #{:perch :pole :lug}
+
+  :furlong [40 :rod]
+
 
   ;; Galactic units
 
