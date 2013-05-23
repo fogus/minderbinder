@@ -18,6 +18,8 @@
   :mile [1760 :yard]
   :furlong [1/8 :mile]  ;; based on US survey foot
 
+  ;; Nautical units
+
   :fathom [10000000/4999999 :yard]
   :survey-ft [1/6 :fathom]
   :nautical-mile 1852
@@ -27,6 +29,8 @@
   :navy-cable-length [720 :survey-ft]
   :marine-league [3 :nautical-mile]
   :old-us-nautical-mile 30401/5
+
+  ;; Survey units
 
   :data-mile [6000 :ft]
 
@@ -53,7 +57,6 @@
   :rod #{:perch :pole :lug}
 
   :furlong [40 :rod]
-
 
   ;; Galactic units
 
