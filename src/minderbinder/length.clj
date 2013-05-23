@@ -11,7 +11,7 @@
   :cm 1/100
   :mm [1/10 :cm]
 
-  :yard 9144/10000
+  :yard 9144/10000  ;; The international yard and pound agreement of July 1959
   :foot [1/3 :yard]
   :foot #{:feet :ft}
   :inch [1/12 :foot]
