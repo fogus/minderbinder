@@ -58,7 +58,7 @@
   :light-year 9460730472580800N
   :light-second 299792458
 
-  :parsec [3.26 :light-year] ;; aprox
+  :parsec [3.26 :light-year] ;; aprox, the divisor is 149597870691/tan(pi/180)
   :parsec :pc
   :megaparsec [1000000 :parsec]
   :megaparsec :Mpc
