@@ -66,9 +66,11 @@
 
   ;; Micro units
 
-  :nm [1/1000 :mm]
-
   :micron [1/1000 :mm]
+  :micron #{:micrometre :µ :micrometer}
+
+  :nm [1/1000 :nm]
+  :nm #{:millimicrometre :nanometer :nanometre :millimicron}
 
   :angstrom [0.1 :nm]
   :angstrom :Å
