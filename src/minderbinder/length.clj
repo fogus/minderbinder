@@ -51,7 +51,10 @@
   :engineers-link [1/100 :engineers-chain]
   :ramsden-chain :engineers-chain
   :ramsden-link :engineers-link
-  :au 149597870700
+
+  :ua 149597870700  ;; The International System of Units (8th edition)
+  :ua #{:au :astronimical-unit}
+
   :light-year 9460730472580800
   :light-second 299792458)
 
