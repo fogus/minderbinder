@@ -86,6 +86,9 @@
   ;; and electron in a hydrogen atom in its ground state.
   :bohr-radius [0.0529177 :nm]
   :bohr-radius #{:atomic-unit-of-length :a₀}
+
+  ;; Typographic units
+  :pica [1/6 :inch]
 )
 
 
