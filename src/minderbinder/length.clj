@@ -89,6 +89,15 @@
 
   ;; Typographic units
   :pica [1/6 :inch]
+  :french/pica [4.512 :mm]
+  :american/pica [4.2175 :mm]
+  :computer/pica [4.233 :mm]
+
+  ;; There is currently no way to describe:
+  ;;   all of these are picas, even though they
+  ;;   have different measures. So a point is always
+  ;;   1/2 of a pica, regardless of the measurement.
+
   :point [1/12 :pica]
 )
 
