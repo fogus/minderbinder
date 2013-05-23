@@ -10,9 +10,6 @@
   :km 1000
   :cm 1/100
   :mm [1/10 :cm]
-  :nm [1/1000 :mm]
-
-  :micron [1/1000 :mm]
 
   :yard 9144/10000
   :foot [1/3 :yard]
@@ -68,6 +65,10 @@
   :gigaparsec :Gpc
 
   ;; Micro units
+
+  :nm [1/1000 :mm]
+
+  :micron [1/1000 :mm]
 
   :angstrom [0.1 :nm]
   :angstrom :Å
