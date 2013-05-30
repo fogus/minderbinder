@@ -61,6 +61,7 @@
                                r# (get conv# u#)]
                            (cond (keyword? r#) (~conv-fn [mag# r#])
                                  (vector?  r#) (* mag# (~conv-fn r#))
+                                 (map? r#) (+ (* mag# (:scale r#)) (:offset r#))
                                  :default (* mag# r#)))
                         (partition 2 descr#)))))
 
