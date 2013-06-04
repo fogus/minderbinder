@@ -1,5 +1,5 @@
 (ns minderbinder.length
-  (use [minderbinder.core :only [defunits-of]]))
+  (:require [minderbinder.core :refer (defunits-of)]))
 
 (def parse-length-unit identity)
 

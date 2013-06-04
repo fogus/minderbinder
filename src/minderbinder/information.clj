@@ -1,5 +1,5 @@
 (ns minderbinder.information
-  (use [minderbinder.core :only [defunits-of]]))
+  (:require [minderbinder.core :refer (defunits-of)]))
 
 (defunits-of information :byte
   "TODO"
