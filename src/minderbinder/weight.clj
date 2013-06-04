@@ -51,6 +51,8 @@
   :mcg [1/1000 :g]
   :mcg #{:microgram :micrograms :µg}
 
+  :ng [1/1000 :mcg]
+  :ng #{:nanogram :nanograms}
 
 
   )
