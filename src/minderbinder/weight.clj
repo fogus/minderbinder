@@ -25,6 +25,8 @@
   :Mg 1000
   :Mg #{:tonne :metric-ton :megagrams :megagram}
 
+  :stone [6.35 :kg]
+  
   ;; Celestial bodies
   
   :Gg [1000 :Mg]
