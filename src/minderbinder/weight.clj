@@ -41,4 +41,8 @@
   :Zg [1000 :Eg]
   :Zg #{:zettagram :zettagrams}
 
+  :Yg [1000 :Zg]
+  :Yg #{:yottagram :yottagrams}
+
+
   )
