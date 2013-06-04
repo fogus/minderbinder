@@ -25,5 +25,8 @@
   :Mg 1000
   :Mg #{:tonne :metric-ton :megagrams :megagram}
 
+  :Gg [1000 :Mg]
+  :Gg #{:gigagrams :gigagram}
   
+
   )
