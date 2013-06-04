@@ -29,6 +29,9 @@
 
   :pound [45359237/100000000 :kg]
   :pound #{:lb :lbs :pounds}
+
+  :ounce [1/16 :lb]
+  :ounce #{:ounces :oz}
   
   ;; Celestial bodies
   
