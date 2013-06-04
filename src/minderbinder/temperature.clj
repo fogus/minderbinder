@@ -9,6 +9,6 @@
 
 (comment
 
-
+  (parse-temperature-unit [100 :celcius])
 
 )
