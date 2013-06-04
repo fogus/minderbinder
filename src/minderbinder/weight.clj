@@ -5,4 +5,8 @@
   "WiP"
   :kg :kilogram
   :g 1/1000
-  :gram :g)
+  :gram #{:grams :g}
+  
+  :hg [100 :grams]
+  :hg :hectogram
+)
