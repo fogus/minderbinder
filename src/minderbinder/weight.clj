@@ -53,6 +53,10 @@
 
   :ng [1/1000 :mcg]
   :ng #{:nanogram :nanograms}
+  
+  :pg [1/1000 :ng]
+  :pg #{:picogram :picograms}
+  
 
 
   )
