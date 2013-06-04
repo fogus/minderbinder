@@ -34,4 +34,8 @@
   :Pg [1000 :Tg]
   :Pg #{:petagram :petagrams}
 
+    
+  :Eg [1000 :Pg]
+  :Eg #{:exagram :exagrams}
+
   )
