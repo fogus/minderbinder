@@ -9,4 +9,6 @@
   
   :hg [100 :grams]
   :hg :hectogram
-)
+
+  :dg [1/10 :g]
+  :dg :decigram)
