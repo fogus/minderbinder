@@ -31,5 +31,7 @@
   :Tg [1000 :Gg]
   :Tg #{:teragram :teragrams}
   
+  :Pg [1000 :Tg]
+  :Pg #{:petagram :petagrams}
 
   )
