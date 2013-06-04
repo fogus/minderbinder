@@ -9,6 +9,7 @@
 
 (comment
 
+  ;; TODO: Needs support in relative-units
   (parse-temperature-unit [100 :celcius])
 
 )
