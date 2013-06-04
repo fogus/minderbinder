@@ -60,6 +60,12 @@
   :fg [1/1000 :pg]
   :fg #{:femtogram :femtograms}
   
-
-
-  )
+  :ag [1/1000 :fg]
+  :ag #{:attogram :attograms}
+  
+  :zg [1/1000 :ag]
+  :zg #{:zeptogram :zeptograms}
+  
+  :yg [1/1000 :yg]
+  :yg #{:yoctogram :yoctograms}
+)
