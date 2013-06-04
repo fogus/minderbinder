@@ -35,6 +35,9 @@
 
   :grain [64.79891 :mg]
   :grain #{:gr :troy-grain}
+
+  :carat [200 :mg]
+  :carat #{:metric-carat :CD}
   
   ;; Celestial bodies
   
