@@ -38,6 +38,9 @@
 
   :carat [200 :mg]
   :carat #{:metric-carat :CD}
+
+  :pearl-grain [1/4 :carat]
+  :pearl-grain :jewelers-grain
   
   ;; Celestial bodies
   
