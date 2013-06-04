@@ -38,4 +38,7 @@
   :Eg [1000 :Pg]
   :Eg #{:exagram :exagrams}
 
+  :Zg [1000 :Eg]
+  :Zg #{:zettagram :zettagrams}
+
   )

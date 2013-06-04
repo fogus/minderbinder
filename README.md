@@ -111,6 +111,7 @@ The `defunits-of` macro will define three things in the namespace where the `def
 Plans
 =====
 
+* Auto-pluralization
 * ClojureScript integration
 * More conversions included by default
 * Base unit changing
