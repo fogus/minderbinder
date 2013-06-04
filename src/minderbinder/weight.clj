@@ -28,5 +28,8 @@
   :Gg [1000 :Mg]
   :Gg #{:gigagrams :gigagram}
   
+  :Tg [1000 :Gg]
+  :Tg #{:teragram :teragrams}
+  
 
   )
