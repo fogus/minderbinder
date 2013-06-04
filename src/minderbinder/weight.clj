@@ -57,6 +57,9 @@
   :pg [1/1000 :ng]
   :pg #{:picogram :picograms}
   
+  :fg [1/1000 :pg]
+  :fg #{:femtogram :femtograms}
+  
 
 
   )
