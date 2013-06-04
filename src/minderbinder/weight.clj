@@ -32,6 +32,9 @@
 
   :ounce [1/16 :lb]
   :ounce #{:ounces :oz}
+
+  :grain [64.79891 :mg]
+  :grain #{:gr :troy-grain}
   
   ;; Celestial bodies
   
