@@ -25,6 +25,8 @@
   :Mg 1000
   :Mg #{:tonne :metric-ton :megagrams :megagram}
 
+  ;; Celestial bodies
+  
   :Gg [1000 :Mg]
   :Gg #{:gigagrams :gigagram}
   
@@ -44,8 +46,11 @@
   :Yg [1000 :Zg]
   :Yg #{:yottagram :yottagrams}
 
+  ;; Microscopic bodies
+  
   :mcg [1/1000 :g]
   :mcg #{:microgram :micrograms :µg}
-  
+
+
 
   )
