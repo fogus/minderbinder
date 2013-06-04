@@ -21,4 +21,9 @@
 
   :cg [1/100 :g]
   :cg #{:centigram :centigrams}
-)
+
+  :Mg 1000
+  :Mg #{:tonne :metric-ton :megagrams :megagram}
+
+  
+  )
