@@ -59,9 +59,10 @@
            (reduce +
                    (map #(let [[mag# u#] %
                                r# (get conv# u#)]
-                           (cond (keyword? r#) (~conv-fn [mag# r#])
-                                 (vector?  r#) (* mag# (~conv-fn r#))
-                                 :default (* mag# r#)))
+                           (cond (keyword? r#) (~conv-fn [mag# r#])                   ;; Single alias
+                                 (vector?  r#) (* mag# (~conv-fn r#))                 ;; Relative unit
+                                 (map? r#)     (+ (* mag# (:scale r#)) (:offset r#))  ;; Scale and offset
+                                 :default (* mag# r#)))                               ;; Assume numbers
                         (partition 2 descr#)))))
 
        (def ~conv-table ~conversions)
