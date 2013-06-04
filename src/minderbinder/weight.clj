@@ -26,6 +26,9 @@
   :Mg #{:tonne :metric-ton :megagrams :megagram}
 
   :stone [6.35 :kg]
+
+  :pound [45359237/100000000 :kg]
+  :pound #{:lb :lbs :pounds}
   
   ;; Celestial bodies
   
