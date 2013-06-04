@@ -11,4 +11,8 @@
   :hg :hectogram
 
   :dg [1/10 :g]
-  :dg :decigram)
+  :dg :decigram
+  
+  :dag [10 :g]
+  :dag :decagram
+)
