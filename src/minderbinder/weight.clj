@@ -44,5 +44,8 @@
   :Yg [1000 :Zg]
   :Yg #{:yottagram :yottagrams}
 
+  :mcg [1/1000 :g]
+  :mcg #{:microgram :micrograms :µg}
+  
 
   )
