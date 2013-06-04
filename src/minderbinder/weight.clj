@@ -18,4 +18,7 @@
   
   :dag [10 :g]
   :dag #{:decagrams :decagram}
+
+  :cg [1/100 :g]
+  :cg #{:centigram :centigrams}
 )
