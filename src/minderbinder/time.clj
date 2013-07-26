@@ -18,5 +18,6 @@
   :blink       [1/100000 :day]
   :ns          [1000000000 :seconds]
   :shake       [10 :ns]
+  :jiffy       [1/100 :second]
   :ce          [1/100 :day])
 
