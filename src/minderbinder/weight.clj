@@ -3,7 +3,7 @@
 
 (defunits-of weight :kilogram
   "WiP"
-  :kg #{:kilograms :kilogram}
+  :kg #{:kilograms :kilogram :grave}
   :g 1/1000
   :gram #{:grams :g}
 
