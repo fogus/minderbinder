@@ -19,5 +19,6 @@
   :ns          [1000000000 :seconds]
   :shake       [10 :ns]
   :jiffy       [1/100 :second]
+  :moment      [90 :seconds]
   :ce          [1/100 :day])
 
