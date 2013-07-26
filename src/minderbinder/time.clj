@@ -16,5 +16,7 @@
   :week        #{:wk :sennight :weeks}
   :fortnight   [14 :day]
   :blink       [1/100000 :day]
+  :ns          [1000000000 :seconds]
+  :shake       [10 :ns]
   :ce          [1/100 :day])
 
