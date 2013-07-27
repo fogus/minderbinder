@@ -21,5 +21,6 @@
   :jiffy       [1/100 :second]
   :moment      [90 :seconds]
   :dog-year    [52 :days]
+  :mastery     [10000 :hours]
   :ce          [1/100 :day])
 
