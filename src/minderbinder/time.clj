@@ -24,3 +24,20 @@
   :mastery     [10000 :hours]
   :ce          [1/100 :day])
 
+(comment
+  (defmacro in [unit body]
+    `(unit-of-time ~body ~unit))
+  
+  (minderbinder.time/in :second #unit/time [1000 :ms])
+
+  (unit-of-time 1 :second)
+
+  [#unit/time [1000 :ms]]
+
+  (/ (unit-of-time 1 :second)
+     (unit-of-time 1000 :ms))
+
+  (/ (unit-of-time 1 :minute)
+     (unit-of-time 1000 :ms))
+  
+)
