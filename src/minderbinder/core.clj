@@ -68,3 +68,14 @@
        (def ~conv-table ~conversions)
        ~conversions)))
 
+(comment
+
+  TODO
+
+  (time/in :seconds
+    (/ #unit/time [30 :days]
+       #unit/time [434 :minutes 53 :seconds]))
+
+  (defn minutes->seconds [minutes]
+    ...)
+)
