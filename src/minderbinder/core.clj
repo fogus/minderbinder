@@ -78,4 +78,8 @@
 
   (defn minutes->seconds [minutes]
     ...)
+
+  TOOD
+
+  Cross-product of names
 )
