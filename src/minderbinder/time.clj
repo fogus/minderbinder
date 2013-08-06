@@ -11,7 +11,7 @@
   :hour        [60 :min]
   :hour        #{:hours :hr}
   :day         [24 :hour]
-  :day         #{:d :da :days}
+  :day         #{:d :da :days :julian-day :julian-days}
   :week        [7 :day]
   :week        #{:wk :sennight :weeks}
   :fortnight   [14 :day]
