@@ -16,6 +16,8 @@
   :week        #{:wk :sennight :weeks}
   :year        [365.25 :days]
   :year        #{:years :julian-year :julian-years}
+  :decade      [10 :years]
+  :century     [100 :years]
   :fortnight   [14 :day]
   :blink       [1/100000 :day]
   :ns          [1000000000 :seconds]
