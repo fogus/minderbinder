@@ -4,9 +4,13 @@
 (def parse-length-unit identity)
 
 (defunits-of length :meter
-  "The meter is the length of the path travelled by light in vacuum during a
-   time interval of 1/299,792,458 of a second."
+  ""
+  ;; The meter is the length of the path travelled by light 
+  ;; in vacuum during a time interval of 1/299,792,458 of a 
+  ;; second. Originally meant to be 1e-7 of the length along 
+  ;; a meridian from the equator to a pole.
   :m  :meter
+
   :km 1000
   :cm 1/100
   :mm [1/10 :cm]

@@ -5,7 +5,7 @@
   ""
   :millisecond #{:ms :milliseconds}
 
-  ;; Duration of 9192631770 periods of the radiation
+  ;; A second is a duration of 9192631770 periods of the radiation
   ;; corresponding to the transition between the two hyperfine
   ;; levels of the ground state of the cesium-133 atom
   :second      1000
