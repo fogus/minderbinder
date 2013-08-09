@@ -1,7 +1,7 @@
-(ns minderbinder.angular
+(ns minderbinder.angle
   (:require [minderbinder.core :refer (defunits-of)]))
 
-(defunits-of angular :radian
+(defunits-of angle :radian
   ""
 
   ;; The angle subtended at the center of a circle by
