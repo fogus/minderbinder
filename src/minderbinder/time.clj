@@ -4,8 +4,13 @@
 (defunits-of time :millisecond
   ""
   :millisecond #{:ms :milliseconds}
+
+  ;; Duration of 9192631770 periods of the radiation
+  ;; corresponding to the transition between the two hyperfine
+  ;; levels of the ground state of the cesium-133 atom
   :second      1000
   :second      #{:sec :s :seconds}
+  
   :minute      [60 :sec]
   :minute      #{:min :minutes :m}
   :hour        [60 :min]
