@@ -124,6 +124,7 @@ References
 * [NIST Weights and Measures](http://www.nist.gov/pml/wmd/)
 * [Let Over Lambda](http://www.amazon.com/dp/1435712757/?tag=fogus-20)
 * [Frink](http://futureboy.us/frinkdocs/)
+* [GNU Units](http://www.gnu.org/software/units/)
 
 License
 =======
