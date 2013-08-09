@@ -1,4 +1,5 @@
-(ns minderbinder.substance)
+(ns minderbinder.substance
+  (:require [minderbinder.core :refer (defunits-of)]))
 
 (defunits-of substance :mol
   ""
