@@ -8,5 +8,5 @@
   ;; point of water
   :kelvin #{:K}
 
-  :celcius    {:scale 1 :offset 273.15}
+  :celcius    {:scale 1   :offset 273.15}
   :fahrenheit {:scale 5/9 :offset 255.37})
