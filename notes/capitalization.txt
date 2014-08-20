@@ -1,0 +1,11 @@
+Rules for how to capitalize SI unit abbreviations:
+
+* Symbols for units not named after people (e.g., the hour in the kWh) are written in lower case.
+
+* Symbols for units named after people (e.g., the "W" which is the watt, named after James Watt of steam engine fame) are written in initial capitals.
+
+* Prefixes for multipliers of 1 000 and smaller (i.e., "k" for kilo-, "h" for hecto-, "da" for deca- and all the prefixes for multipliers smaller than one) are written in lower case.
+
+* Prefixes for multipliers of 1 000 000 and greater (e.g., "M" for mega-, "G" for giga-) are written in initial capitals.
+
+(taken from https://plus.google.com/u/0/107357401349156916755/posts/DuQLB12MjLV)

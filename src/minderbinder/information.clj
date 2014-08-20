@@ -1,13 +1,20 @@
 (ns minderbinder.information
-  (use [minderbinder.core :only [defunits-of]]))
+  (:require [minderbinder.core :refer (defunits-of)]))
 
-(defunits-of information :byte
-  "TODO"
-  :bit 1/8
-  :nibble 1/2
+;; Basic unit of information (entropy).  The entropy in bits
+;; of a random variable over a finite alphabet is defined
+;; to be the sum of -p(i)*log2(p(i)) over the alphabet where
+;; p(i) is the probability that the random variable takes
+;; on the value i.
+
+(defunits-of information :bit
+  ""
+  :byte 8
+  :byte #{:bytes}
+  :nibble [1/2 :byte]
   :nibble #{:nybble :nyble}
   :octet :byte
-  :kilobyte 1024
+  :kilobyte [1024 :bytes]
   :kilobyte #{:kibibyte :KiB :kB}
   :megabyte [1024 :kilobyte]
   :megabyte #{:mebibyte :MiB :MB}

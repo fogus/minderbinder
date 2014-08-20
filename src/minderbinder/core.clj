@@ -59,12 +59,27 @@
            (reduce +
                    (map #(let [[mag# u#] %
                                r# (get conv# u#)]
-                           (cond (keyword? r#) (~conv-fn [mag# r#])
-                                 (vector?  r#) (* mag# (~conv-fn r#))
-                                 (map? r#) (+ (* mag# (:scale r#)) (:offset r#))
-                                 :default (* mag# r#)))
+                           (cond (keyword? r#) (~conv-fn [mag# r#])                   ;; Single alias
+                                 (vector?  r#) (* mag# (~conv-fn r#))                 ;; Relative unit
+                                 (map? r#)     (+ (* mag# (:scale r#)) (:offset r#))  ;; Scale and offset
+                                 :default (* mag# r#)))                               ;; Assume numbers
                         (partition 2 descr#)))))
 
        (def ~conv-table ~conversions)
        ~conversions)))
 
+(comment
+
+  TODO
+
+  (time/in :seconds
+    (/ unit/time [30 :days]
+       unit/time [434 :minutes 53 :seconds]))
+
+  (defn minutes->seconds [minutes]
+    ...)
+
+  TOOD
+
+  Cross-product of names
+)
