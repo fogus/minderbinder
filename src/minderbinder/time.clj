@@ -38,7 +38,7 @@
   (defmacro in [unit body]
     `(unit-of-time ~body ~unit))
   
-  (minderbinder.time/in :second #unit/time [1000 :ms])
+  (minderbinder.time/in :seconds #unit/time [1000 :ms])
 
   (unit-of-time 1 :second)
 

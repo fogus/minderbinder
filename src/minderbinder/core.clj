@@ -83,3 +83,9 @@
 
   Cross-product of names
 )
+
+(defprotocol Measurable
+  ""
+  (double-value [this unit])
+  (long-value   [this unit]))
+
