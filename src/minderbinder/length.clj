@@ -83,7 +83,7 @@
   :micron [1/1000 :mm]
   :micron #{:micrometre :µ :micrometer :um}
 
-  :nm [1/1000 :nm]
+  :nm [1/1000 :micrometre]
   :nm #{:millimicrometre :nanometer :nanometre :millimicron}
 
   :pm [1/1000000 :micron]
