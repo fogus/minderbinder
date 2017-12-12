@@ -51,7 +51,8 @@
   :chain :surveyors-chain
   :chain #{:survey-chain :ch}
   :link :surveyors-link
-  :gunters-chain #{:surveyors-chain :chain}
+  :gunters-chain :chain
+  :gunters-chain :surveyors-chain
   :engineers-chain [100 :ft]
   :engineers-link [1/100 :engineers-chain]
   :ramsden-chain :engineers-chain
