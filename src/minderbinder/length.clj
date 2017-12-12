@@ -71,12 +71,12 @@
   :light-year 9460730472580800N
   :light-second 299792458
 
-  :parsec [3.26 :light-year] ;; ≈ - the divisor is 149597870691/tan(pi/180)
   :parsec :pc
-  :megaparsec [1000000 :parsec]
+  :parsec [3.26 :light-year] ;; ≈ - the divisor is 149597870691/tan(pi/180)
   :megaparsec :Mpc
-  :gigaparsec [1000000000 :parsec]
+  :megaparsec [1000000 :parsec]
   :gigaparsec :Gpc
+  :gigaparsec [1000000000 :parsec]
 
   ;; Particle units
 
@@ -89,8 +89,8 @@
   :pm [1/1000000 :micron]
   :pm #{:picometer :picometre :µµ}
 
-  :angstrom [100 :pm]
   :angstrom :Å
+  :angstrom [100 :pm]
 
   :fermi [1/1000000 :nm]
   :fermi #{:femtometre :femtometer :fm}
