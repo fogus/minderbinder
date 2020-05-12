@@ -10,7 +10,7 @@ Use
 
 Include the following in your [Leiningen]() project.clj file:
 
-    [fogus/minderbinder "0.2.0"]
+    [fogus/minderbinder "0.3.0"]
 
 Or include the following in your pom.xml file in the `dependencies` section:
 
@@ -18,7 +18,7 @@ Or include the following in your pom.xml file in the `dependencies` section:
 	<dependency>
       <groupId>fogus</groupId>
       <artifactId>minderbinder</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
 	</dependency>
 ```
 
