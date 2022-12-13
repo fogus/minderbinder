@@ -4,7 +4,7 @@
 
  :aliases
  {
-  :dev  {:extra-deps (org.clojure/clojure           {:mvn/version "1.11.0-alpha1"})}
+  :dev  {:extra-deps  {org.clojure/clojure {:mvn/version "1.11.0-alpha1"}}}
   :test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
                       {:git/url "https://github.com/cognitect-labs/test-runner.git"

@@ -107,6 +107,10 @@ The `defunits-of` macro will define three things in the namespace where the `def
  
  3. `XXX-table`      - a map describing the unit conversion rules.
 
+Testing
+=======
+
+    clj -X:dev:test
 
 Plans
 =====

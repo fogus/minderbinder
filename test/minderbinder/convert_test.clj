@@ -1,4 +1,4 @@
-(ns minderbinder.test.core
+(ns minderbinder.convert-test
   (:use [minderbinder.core] :reload)
   (:require minderbinder.time)
   (:use [clojure.test]))
