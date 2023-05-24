@@ -51,7 +51,8 @@
   :chain :surveyors-chain
   :chain #{:survey-chain :ch}
   :link :surveyors-link
-  :gunters-chain #{:surveyors-chain :chain}
+  :gunters-chain :chain
+  :gunters-chain :surveyors-chain
   :engineers-chain [100 :ft]
   :engineers-link [1/100 :engineers-chain]
   :ramsden-chain :engineers-chain
@@ -70,26 +71,26 @@
   :light-year 9460730472580800N
   :light-second 299792458
 
-  :parsec [3.26 :light-year] ;; ≈ - the divisor is 149597870691/tan(pi/180)
   :parsec :pc
-  :megaparsec [1000000 :parsec]
+  :parsec [3.26 :light-year] ;; ≈ - the divisor is 149597870691/tan(pi/180)
   :megaparsec :Mpc
-  :gigaparsec [1000000000 :parsec]
+  :megaparsec [1000000 :parsec]
   :gigaparsec :Gpc
+  :gigaparsec [1000000000 :parsec]
 
   ;; Particle units
 
   :micron [1/1000 :mm]
   :micron #{:micrometre :µ :micrometer :um}
 
-  :nm [1/1000 :nm]
+  :nm [1/1000 :micrometre]
   :nm #{:millimicrometre :nanometer :nanometre :millimicron}
 
   :pm [1/1000000 :micron]
   :pm #{:picometer :picometre :µµ}
 
-  :angstrom [100 :pm]
   :angstrom :Å
+  :angstrom [100 :pm]
 
   :fermi [1/1000000 :nm]
   :fermi #{:femtometre :femtometer :fm}
